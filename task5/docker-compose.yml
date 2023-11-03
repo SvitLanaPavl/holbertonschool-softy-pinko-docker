@@ -4,15 +4,20 @@ services:
   backend:
     build:
       context: ./back-end # where the dockerfile for back-end is located
-    image: task4-backend
-    ports:
-      - '5252:5252' # port 5252 from the host to 5252 in the container
     depends_on:
       - frontend # frontend is started before the 'backend' service
 
   frontend:
     build:
       context: ./front-end # where the dockerfile for front-end is located
-    image: task4-frontend
+
+  proxy:
+    build:
+      context: ./proxy # where the dockerfile for proxy is located
+    image: task5-proxy
     ports:
-      - '9000:9000' # port 9000 from the host to port 9000 in the container
+      - '80:80' # map the container's port 80 to the host machine's port 80
+    depends_on:
+      - frontend
+      - backend
+
