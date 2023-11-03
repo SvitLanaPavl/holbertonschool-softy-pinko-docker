@@ -4,9 +4,8 @@ services:
   backend:
     build:
       context: ./back-end # where the dockerfile for back-end is located
-      dockerfile: Dockerfile # dockerfile to use
     ports:
-      - '5050:5000' # port 5050 from the host to 5000 in the container
+      - '5252:5252' # port 5252 from the host to 5252 in the container
     depends_on:
       - frontend # frontend is started before the 'backend' service
 
@@ -14,4 +13,4 @@ services:
     build:
       context: ./front-end # where the dockerfile for front-end is located
     ports:
-      - '80:80' # port 80 from the host to port 80 in the container
+      - '9000:9000' # port 9000 from the host to port 9000 in the container
