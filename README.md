@@ -22,9 +22,9 @@ In this design, there is a single server that acts as the entry point for your a
 - Install Docker Desktop on your local computer (not your sandbox)
 https://www.docker.com/
 - For more detailed installation instructions, see:
-[Windows](https://docs.docker.com/desktop/install/windows-install/)
-[Mac](https://docs.docker.com/desktop/install/mac-install/)
-[Linux](https://docs.docker.com/desktop/install/linux-install/)
+[Windows](https://docs.docker.com/desktop/install/windows-install/) <br />
+[Mac](https://docs.docker.com/desktop/install/mac-install/) <br />
+[Linux](https://docs.docker.com/desktop/install/linux-install/) <br />
 [Chromebook](https://www.techrepublic.com/article/install-docker-chromeos/) - Note: this is the Docker engine, but not Docker Desktop. It is unclear how well this will work on a chromebook - you may want to use a Windows, Mac, or Linux machine or a machine on campus, instead.
 
 ### Familiarize yourself with Docker
